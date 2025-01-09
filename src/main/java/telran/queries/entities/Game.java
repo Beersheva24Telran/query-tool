@@ -12,6 +12,11 @@ public class Game {
     @Column(name="is_finished")
     boolean isFinished;
     String sequence;
+    @Override
+    public String toString() {
+        return "Game [id=" + id + ", dateTime=" + dateTime + ", isFinished=" + isFinished + ", sequence=" + sequence
+                + "]";
+    }
 
 
 
