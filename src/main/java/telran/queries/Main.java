@@ -20,7 +20,7 @@ public class Main {
     }
     private static void createEntityManager() {
         HashMap<String, Object> hibernateProperties = new HashMap<>();
-           hibernateProperties.put("hibernate.hbm2dl.auto","update");
+           hibernateProperties.put("hibernate.hbm2ddl.auto","update");
            PersistenceUnitInfo persistenceUnit = new BullsCowsPersistenceUnitInfo();
            HibernatePersistenceProvider hibernatePersistenceProvider = new HibernatePersistenceProvider();
            EntityManagerFactory emf =
