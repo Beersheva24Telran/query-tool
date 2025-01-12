@@ -11,6 +11,9 @@ public class Game {
     LocalDateTime dateTime;
     @Column(name="is_finished")
     boolean isFinished;
+    public void setGameIsFinished(){
+        isFinished = true;
+    }
     String sequence;
     @Override
     public String toString() {
