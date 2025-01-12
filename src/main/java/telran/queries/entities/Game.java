@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 @Table(name="game")
 public class Game {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     long id;
     @Column(name="date_time")
     LocalDateTime dateTime;

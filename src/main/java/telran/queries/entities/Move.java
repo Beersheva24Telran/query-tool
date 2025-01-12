@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 @Entity
 public class Move {
 @Id
-@GeneratedValue
+@GeneratedValue(strategy=GenerationType.IDENTITY)
 long id;
 int bulls;
 int cows;
